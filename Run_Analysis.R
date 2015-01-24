@@ -60,4 +60,4 @@ tidy_data<-cbind(X_merged, cbind(Subject_merged, Y_merged))
 names(tidy_data) <- ((rbind(filtered_features, rbind(c(562, "Subject"), c(563, "Activity"))))[,2])
 
 # 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-write.table(tidy_data, file = "./tidy_data.txt", row.name=FALSE)
+write.table(tidy_data, file = "./tidy_data.txt", sep=';', row.name=FALSE)
